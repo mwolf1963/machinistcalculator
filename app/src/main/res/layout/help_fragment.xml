@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/helpLabel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background1"
+    tools:context="com.com.machinistcalculator.ui.help.HelpFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/background1"
+        android:paddingBottom="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="-176dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/g_m_code_help_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="G and M codes"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/diaDef" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Help"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/speedsAndFeedsLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Speeds and Feeds"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+            <TextView
+                android:id="@+id/speedsAndFeedsExplained"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="24dp"
+                android:text="Simply fill in the fields that you know. Once you have provided enough information, the fields will automatically be populated."
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/speedsAndFeedsLabel"
+                app:layout_constraintStart_toStartOf="@+id/speedsAndFeedsLabel"
+                app:layout_constraintTop_toBottomOf="@+id/speedsAndFeedsLabel" />
+
+            <TextView
+                android:id="@+id/rpmDefTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="RPM"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.19"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/speedsAndFeedsExplained" />
+
+            <TextView
+                android:id="@+id/cssDefTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="CSS"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/rpmDefTextView"
+                app:layout_constraintStart_toStartOf="@+id/rpmDefTextView"
+                app:layout_constraintTop_toBottomOf="@+id/rpmDefTextView" />
+
+            <TextView
+                android:id="@+id/fptDefTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="FPT"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/cssDefTextView"
+                app:layout_constraintStart_toStartOf="@+id/cssDefTextView"
+                app:layout_constraintTop_toBottomOf="@+id/cssDefTextView" />
+
+            <TextView
+                android:id="@+id/teethDefTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Teeth"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/fptDefTextView"
+                app:layout_constraintHorizontal_bias="0.19"
+                app:layout_constraintStart_toStartOf="@+id/fptDefTextView"
+                app:layout_constraintTop_toBottomOf="@+id/fptDefTextView" />
+
+            <TextView
+                android:id="@+id/diaDefTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Dia"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/teethDefTextView"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/teethDefTextView"
+                app:layout_constraintTop_toBottomOf="@+id/teethDefTextView" />
+
+            <TextView
+                android:id="@+id/rpmDef"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Revolutions Per Minute"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/rpmDefTextView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/rpmDefTextView"
+                app:layout_constraintTop_toTopOf="@+id/rpmDefTextView" />
+
+            <TextView
+                android:id="@+id/fptDef"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Feed per Tooth"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/fptDefTextView"
+                app:layout_constraintStart_toStartOf="@+id/cssDef"
+                app:layout_constraintTop_toTopOf="@+id/fptDefTextView" />
+
+            <TextView
+                android:id="@+id/cssDef"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Constaint Surface Speed"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/cssDefTextView"
+                app:layout_constraintStart_toStartOf="@+id/rpmDef"
+                app:layout_constraintTop_toTopOf="@+id/cssDefTextView" />
+
+            <TextView
+                android:id="@+id/teethDef"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Number of Teeth"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/teethDefTextView"
+                app:layout_constraintStart_toStartOf="@+id/fptDef"
+                app:layout_constraintTop_toTopOf="@+id/teethDefTextView" />
+
+            <TextView
+                android:id="@+id/diaDef"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dia of tool or Work peice"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/diaDefTextView"
+                app:layout_constraintStart_toStartOf="@+id/teethDef"
+                app:layout_constraintTop_toTopOf="@+id/diaDefTextView" />
+
+            <TextView
+                android:id="@+id/gmcodeDef"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginRight="25dp"
+                android:text="Select the control type, then the type of code that you would like to view."
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/g_m_code_help_label"
+                app:layout_constraintStart_toStartOf="@+id/g_m_code_help_label"
+                app:layout_constraintTop_toBottomOf="@+id/g_m_code_help_label" />
+
+            <TextView
+                android:id="@+id/trigCalculatorHelpLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Trig Calculator"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/gmcodeDef" />
+
+            <TextView
+                android:id="@+id/trigCalculatorDef"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Enter known values. Setable precision coming soon!"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/trigCalculatorHelpLabel"
+                app:layout_constraintStart_toStartOf="@+id/trigCalculatorHelpLabel"
+                app:layout_constraintTop_toBottomOf="@+id/trigCalculatorHelpLabel" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/trig_calc_Layout_mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background1"
+    tools:context=".trig_Calculator">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/trig_calc_Layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="24dp"
+            tools:context=".trig_Calculator">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/a_280px_trigonometric_triangle" />
+
+            <TextView
+                android:id="@+id/lengthLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Lengths"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/imageView"
+                app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+            <TextView
+                android:id="@+id/angleLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Angles"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/imageView"
+                app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+            <TextView
+                android:id="@+id/a_input_TextView"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="#80FFFFFF"
+                android:text=" "
+                android:textAlignment="textEnd"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="@+id/lengthLabel"
+                app:layout_constraintStart_toStartOf="@+id/lengthLabel"
+                app:layout_constraintTop_toBottomOf="@+id/lengthLabel" />
+
+            <TextView
+                android:id="@+id/a_angle_Input_EditText"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="#80FFFFFF"
+                android:text=" "
+                android:textAlignment="textEnd"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="@+id/angleLabel"
+                app:layout_constraintStart_toStartOf="@+id/angleLabel"
+                app:layout_constraintTop_toBottomOf="@+id/angleLabel" />
+
+            <TextView
+                android:id="@+id/h_length_EditText"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="#80FFFFFF"
+                android:text=" "
+                android:textAlignment="textEnd"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="@+id/a_input_TextView"
+                app:layout_constraintStart_toStartOf="@+id/a_input_TextView"
+                app:layout_constraintTop_toBottomOf="@+id/b_input_TextView" />
+
+            <TextView
+                android:id="@+id/b_input_TextView"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="#80FFFFFF"
+                android:editable="false"
+                android:text=" "
+                android:textAlignment="textEnd"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="@+id/a_input_TextView"
+                app:layout_constraintStart_toStartOf="@+id/a_input_TextView"
+                app:layout_constraintTop_toBottomOf="@+id/a_input_TextView" />
+
+            <TextView
+                android:id="@+id/b_angle_Input_TextView"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="#80FFFFFF"
+                android:text=""
+                android:textAlignment="textEnd"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="@+id/a_angle_Input_EditText"
+                app:layout_constraintStart_toStartOf="@+id/a_angle_Input_EditText"
+                app:layout_constraintTop_toBottomOf="@+id/a_angle_Input_EditText" />
+
+            <TextView
+                android:id="@+id/c_angle_Input_TextView"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="#80FFFFFF"
+                android:editable="false"
+                android:text="90.0"
+                android:textAlignment="textEnd"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="@+id/b_angle_Input_TextView"
+                app:layout_constraintTop_toBottomOf="@+id/b_angle_Input_TextView" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/label_a_length"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="a"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/a_input_TextView"
+                app:layout_constraintEnd_toStartOf="@+id/a_input_TextView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/a_input_TextView" />
+
+            <TextView
+                android:id="@+id/label_b_length"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="b"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/b_input_TextView"
+                app:layout_constraintEnd_toStartOf="@+id/b_input_TextView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/b_input_TextView" />
+
+            <TextView
+                android:id="@+id/label_h_length"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="h"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/h_length_EditText"
+                app:layout_constraintEnd_toStartOf="@+id/h_length_EditText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/h_length_EditText" />
+
+            <TextView
+                android:id="@+id/label_a_angle"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:text="A"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@+id/a_angle_Input_EditText"
+                app:layout_constraintEnd_toStartOf="@+id/a_angle_Input_EditText"
+                app:layout_constraintStart_toEndOf="@+id/a_input_TextView"
+                app:layout_constraintTop_toTopOf="@+id/a_angle_Input_EditText" />
+
+            <TextView
+                android:id="@+id/label_b_angle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="B"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@+id/b_angle_Input_TextView"
+                app:layout_constraintEnd_toStartOf="@+id/b_angle_Input_TextView"
+                app:layout_constraintStart_toEndOf="@+id/b_input_TextView"
+                app:layout_constraintTop_toTopOf="@+id/b_angle_Input_TextView" />
+
+            <TextView
+                android:id="@+id/label_c_angle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="C"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@+id/c_angle_Input_TextView"
+                app:layout_constraintEnd_toStartOf="@+id/c_angle_Input_TextView"
+                app:layout_constraintStart_toEndOf="@+id/h_length_EditText"
+                app:layout_constraintTop_toTopOf="@+id/c_angle_Input_TextView" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</LinearLayout>
