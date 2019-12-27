@@ -2,6 +2,8 @@ package com.mwolf1963.github.machinistcalculator;
 
 import android.content.res.Resources;
 import android.os.Bundle;
+import android.view.MenuItem;
+import android.widget.Switch;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
@@ -39,6 +41,15 @@ public class SettingsActivity extends AppCompatActivity {
             findPreference(getString(R.string.units_key));
 
         }
+    }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item){
+        switch (item.getItemId()){
+            case android.R.id.home:
+                onBackPressed();
+                return true;
+        }
+        return  super.onOptionsItemSelected(item);
     }
     @Override
     public void onDestroy(){
