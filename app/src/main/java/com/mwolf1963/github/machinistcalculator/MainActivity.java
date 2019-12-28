@@ -72,9 +72,8 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(this, SettingsActivity.class));
                 return true;
             case R.id.edit_G_and_M_code:
-                Intent intent = new Intent(this, G_and_M_codeActivity.class);
-                edit = true;
-                intent.putExtra("edit", edit);
+                Intent intent = new Intent(getApplicationContext(), G_and_M_codeActivity.class);
+                intent.putExtra("edit", true);
                 startActivity(intent);
             case R.id.exit:
                 finish();

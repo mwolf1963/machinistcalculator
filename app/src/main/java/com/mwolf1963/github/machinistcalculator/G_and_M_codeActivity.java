@@ -1,12 +1,8 @@
 package com.mwolf1963.github.machinistcalculator;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.util.Log;
-
-import com.mwolf1963.github.machinistcalculator.R;
-
 import com.mwolf1963.github.machinistcalculator.ui.gAndMCodes.GAndMCodesFragment;
 
 public class G_and_M_codeActivity extends AppCompatActivity {
@@ -24,4 +20,5 @@ public class G_and_M_codeActivity extends AppCompatActivity {
 
 
     }
+
 }

@@ -1,5 +1,6 @@
 //TODO: add custom data to the database for each user
 package com.mwolf1963.github.machinistcalculator.ui.gAndMCodes;
+import android.content.Intent;
 import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -8,6 +9,8 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
@@ -16,7 +19,9 @@ import android.widget.Spinner;
 
 import java.util.List;
 import com.mwolf1963.github.machinistcalculator.CodeDB;
+import com.mwolf1963.github.machinistcalculator.G_and_M_codeActivity;
 import com.mwolf1963.github.machinistcalculator.R;
+import com.mwolf1963.github.machinistcalculator.SettingsActivity;
 import com.mwolf1963.github.machinistcalculator.models.MachineCode;
 
 public class GAndMCodesFragment extends Fragment {
@@ -83,6 +88,9 @@ public class GAndMCodesFragment extends Fragment {
         updateUI();
         return v;
     }
+
+
+
 
     private void updateList(){
         int machine = controlSelection.getSelectedItemPosition();

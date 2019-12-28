@@ -6,7 +6,7 @@
         android:id="@+id/pref"
         android:icon="@android:drawable/ic_menu_preferences"
         android:title="@string/pref"
-        app:showAsAction="ifRoom" />
+        app:showAsAction="ifRoom|withText" />
     <item
         android:id="@+id/edit_G_and_M_code"
         android:title="Edit G and M code" />
@@ -14,5 +14,5 @@
         android:id="@+id/exit"
         android:icon="@android:drawable/ic_menu_close_clear_cancel"
         android:title="@string/exit"
-        app:showAsAction="ifRoom" />
+        app:showAsAction="ifRoom|withText" />
 </menu>

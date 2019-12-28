@@ -38,6 +38,10 @@ public class Speeds_and_FeedsActivity extends AppCompatActivity {
             case R.id.pref:
                 startActivity(new Intent(this, SettingsActivity.class));
                 return true;
+            case R.id.edit_G_and_M_code:
+                Intent intent = new Intent(this, G_and_M_codeActivity.class);
+                intent.putExtra("edit", true);
+                startActivity(intent);
             case R.id.exit:
                 finish();
                 return true;
